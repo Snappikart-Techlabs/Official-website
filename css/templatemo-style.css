@@ -96,7 +96,7 @@ a:focus {
 }
 
 .overlay {
-  background: linear-gradient(to top right, #6b6b6b, #000000);
+  background: linear-gradient(to top right, #dfdddd, #000000);
   opacity: 0.9;
   position: absolute;
   top: 0;
