@@ -259,4 +259,162 @@ background-position: center top !important;
   width: 50%;
 }
 
+
+/*
+.team .team-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.team-member {
+  flex: 1 1 calc(25% - 20px); /* 4 items per row 
+  max-width: calc(25% - 20px);
+}
+
+.team-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}*/
+
+/* Founder's Quote */
+.founder-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.founder-image img {
+  max-width: 150px;
+  border-radius: 50%;
+}}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+ /* .team-member {
+    flex: 1 1 calc(50% - 20px); /* 2 items per row 
+    max-width: calc(50% - 20px);
+}*/
+
+
+.founder-section {
+    flex-direction: column;
+}
+}
+
+@media (max-width: 480px) {
+
+/*.team-member {
+  flex: 1 1 100%; /* 1 item per row for very small screen
+  max-width: 100%;
+}
+
+.team-photo {
+  width: 80%; /* Reduce photo size for small screens 
+}*/
+
+.founder-section img {
+    width: 100px;
+}
+}
+
+@media (max-width: 1024px) {
+  .second-row {
+    width: 90%; /* Reduce width on medium screens */
+    justify-content: center; /* Center-align for consistent spacing */
+  }
+}
+
+@media (max-width: 768px) {
+  .row1 {
+    flex-direction: column; /* Stack team members vertically */
+    align-items: center; /* Center-align stacked items */
+    gap: 30px; /* Increase gap for better spacing */
+  }
+  .team-member {
+    width: 250px; /* Slightly increase width for better readability */
+  }
+  .team-photo {
+    width: 120px;
+    height: 120px; /* Adjust size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-inner .item {
+    height: 100vh; /* Ensure it fills the screen */
+    background-size: cover; /* Keep the proportions */
+    background-position: center; /* Center the image */
+  }
+
+  .team-photo {
+    width: 100px;
+    height: 100px; /* Further reduce photo size */
+  }
+  .team-name {
+    font-size: 14px; /* Smaller text for smaller screens */
+  }
+  .team-role {
+    font-size: 12px; /* Adjust role text size */
+  }
+  .team-member {
+    width: 90%; /* Full-width cards on small screens */
+  }
+}
+@media (max-width: 1024px) {
+  .carousel-inner .item {
+    height: 100vh; /* Maintain full height on tablets */
+    background-size: cover; /* Ensure the image fills proportionally */
+    background-position: center;
+  }
+  .carousel-caption h2 {
+    font-size: 2.5em; /* Reduce size for tablets */
+  }
+
+  .carousel-caption h3 {
+    font-size: 1.8em; /* Adjust subtitle size */
+  }
+
+  .carousel-caption p {
+    font-size: 1em; /* Scale down text */
+    padding: 0 15px; /* Add padding for better readability */
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-inner .item {
+    height: 100vh; /* Full screen height for small devices */
+    background-size: cover; /* Fill the screen proportionally */
+    background-position: center;
+  }
+  .carousel-caption h2 {
+    font-size: 2em; /* Further reduce heading size */
+  }
+
+  .carousel-caption h3 {
+    font-size: 1.5em; /* Adjust subtitle size */
+  }
+
+  .carousel-caption p {
+    font-size: 0.9em; /* Reduce paragraph font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-caption h2 {
+    font-size: 1.8em; /* Scale heading for small devices */
+  }
+
+  .carousel-caption h3 {
+    font-size: 1.2em; /* Adjust subtitle size */
+  }
+
+  .carousel-caption p {
+    font-size: 0.8em; /* Further reduce text size */
+    line-height: 1.4; /* Adjust line height */
+  }
 }
