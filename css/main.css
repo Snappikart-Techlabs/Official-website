@@ -152,6 +152,12 @@ body > section,
 			transition: background-color 800ms linear;
 }
 
+.navbar-container{
+  height: 10.1vh;
+  padding: 7px;
+  justify-content: center;
+}
+
 .navbar-toggle i {
 	color: rgb(195, 177, 225);
 }
@@ -170,7 +176,7 @@ body > section,
 .navbar-nav li a:hover {
 	background-color: transparent;
 	border-top: 1px solid #C3B1E1;
-	color: rgb(195, 177, 225);
+	color: rgb(37, 35, 39);
 }
 
   /* Carousel item styling */
