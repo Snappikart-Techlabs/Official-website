@@ -1,149 +1,572 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
 <head>
+    <!-- meta charec set -->
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- Page Title -->
+    <title>Themefisher.Free Bootstrap3 based HTML5 Templates</title>
+    <!-- Meta Description -->
+    <meta name="description" content="Blue One Page Creative HTML5 Template">
+    <meta name="keywords"
+        content="one page, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation">
+    <meta name="author" content="Muhammad Morshed">
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-     <title>Snappikart - Coming Soon</title>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-     <meta name="description" content="Snappikart - Revolutionizing Retail Experience">
-     <meta name="keywords" content="Snappikart, Retail, POS, Innovation">
-     <meta name="team" content="Snappikart Techlabs Pvt. Ltd.">
-     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Google Font -->
 
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/vegas.min.css">
-     <link rel="stylesheet" href="css/font-awesome.min.css">
-     <link rel="icon" href="images/icon (2).png" type="image/png">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-     <!-- MAIN CSS -->
-     <link rel="stylesheet" href="css/templatemo-style.css">
+    <!-- CSS
+		================================================== -->
+    <!-- Fontawesome Icon font -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Twitter Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- jquery.fancybox  -->
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <!-- animate -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- media-queries -->
+    <link rel="stylesheet" href="css/media-queries.css">
+
+    <!-- Modernizer Script for old Browsers -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
 
 </head>
-<body>
 
-     <!-- PRE LOADER -->
-     <section class="preloader">
-          <div class="spinner">
-               <span class="spinner-rotate"></span>
-          </div>
-     </section>
+<body id="body">
+
+    <!-- preloader -->
+    <div id="preloader">
+        <img src="img/preloader.gif" alt="Preloader">
+    </div>
+    <!-- end preloader -->
+
+    <!-- 
+        Fixed Navigation
+        ==================================== -->
+    <header id="navigation" class="navbar-fixed-top navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- responsive nav button -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars fa-2x"></i>
+                </button>
+                <!-- /responsive nav button -->
+
+                <!-- logo -->
+                <a class="navbar-brand" href="#body">
+                    <h1 id="logo">
+                        <img src="img/remove.png" alt="Brandi">
+                    </h1>
+                </a>
+                <!-- /logo -->
+            </div>
+
+            <!-- main nav -->
+            <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                <ul id="nav" class="nav navbar-nav">
+                    <li class="current"><a href="#body">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#facts">Founder's Quote</a></li>
+                    <li><a href="#team">Team Info</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <!-- /main nav -->
+
+        </div>
+    </header>
+    <!--
+        End Fixed Navigation
+        ==================================== -->
 
 
-     <!-- GRID LINE -->
-    <section class="grid">
-         <div class="container">
+
+    <!--
+        Home Slider
+        ==================================== -->
+
+    <section id="slider">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators bullet -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            </ol>
+            <!-- End Indicators bullet -->
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+                <!-- single slide -->
+                <div class="item active" style="background-image: url(img/img_frametwo.webp);">
+                    <div class="carousel-caption">
+                        <h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated">
+                            Snappikart</span></h2>
+                        <h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span
+                                class="color">/RESHAPING</span> RETAIL.</h3><br><br>
+                        <p data-wow-duration="1000ms" class="wow slideInRight animated">Redefining retail experience with our innovative technology solutions to bridge the gap between retailers and customers, creating a seamless shopping journey powered by automation, artificial intelligence and intuitive design.
+                        </p>
+
+                        
+                    </div>
+                </div>
+                <!-- end single slide -->
+
+                
+            
+            </div>
+            <!-- End Wrapper for slides -->
+
+        </div>
+    </section>
+
+    <!--
+        End Home SliderEnd
+        ==================================== -->
+
+    <!--
+        Features
+        ==================================== -->
+
+    <section id="features" class="features">
+        <div class="container">
             <div class="row">
 
-              <div class="col-md-2 col-sm-2">
-                <div class="grid-line"></div>
-              </div>
-              <div class="col-md-2 col-sm-2">
-                <div class="grid-line"></div>
-              </div>
-              <div class="col-md-2 col-sm-2">
-                <div class="grid-line"></div>
-              </div>
-              <div class="col-md-2 col-sm-2">
-                <div class="grid-line"></div>
-              </div>
-              <div class="col-md-2 col-sm-2">
-                <div class="grid-line"></div>
-              </div>
+                <div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
+                    <h2>Features</h2>
+                    <!--<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>-->
+                </div>
+
+                <!-- service item -->
+                <div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
+                    <div class="service-item">
+                        <!--<div class="service-icon">
+                            <i class="fa fa-github fa-2x"></i>
+                        </div>-->
+
+                        <div class="service-desc">
+                            <h3>Self Checkout</h3>
+                            <p>Barcode or QR scanning for adding items to the cart and skipping queues. It includes automatic generation of bills for added items.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end service item -->
+
+                <!-- service item -->
+                <div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+                    <div class="service-item">
+                       <!-- <div class="service-icon">
+                            <i class="fa fa-pencil fa-2x"></i>
+                        </div>-->
+
+                        <div class="service-desc">
+                            <h3>Anti-theft </h3>
+                            <p>Anti-theft measures with QR based gate passes for verified exit.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end service item -->
+
+                <!-- service item -->
+                <div class="col-md-4 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="900ms">
+                    <div class="service-item">
+                        <!--<div class="service-icon">
+                            <i class="fa fa-bullhorn fa-2x"></i>
+                        </div>-->
+
+                        <div class="service-desc">
+                            <h3>Offers and Support</h3>
+                            <p>In app offers and promotions that highlight stor discounts.Provides customer support. In-app assisstance for resolving queries and issues.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- end service item -->
 
             </div>
-         </div>
+        </div>
+    </section>
+    <section id="facts" class="facts">
+        <div class="parallax-overlay">
+            <div class="container">
+                <div class="row number-counters">
+
+                    <div class="sec-title text-center mb50 wow rubberBand animated" data-wow-duration="1000ms">
+                        <h2>founder's quote</h2>
+                        <!--<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>-->
+                    </div>
+
+                    
+                    
+                    <div class="founder-section">
+                        <div class="founder-image">
+                            <img src="img/team/ceo.png" alt="Sankalp Jain (CEO)">
+                        </div>
+                        <div class="founder-quote">
+                            <p class="quote">
+                                Snappikart: Because saving time, boosting business, and looking like a genius while doing it is just how we roll. You're welcome.
+                            </p>
+                            <p class="author">- Sankalp Jain (CEO)</p>
+                        </div>
+                    </div>
+                    
+                
+                </div>
+            </div>
+        </div>
     </section>
 
 
-    <div class="menu-bg"></div>
-    <div class="menu-burger">☰</div>
-
-    <div class="menu-items">
-       <div class="container">
-         <div class="row">
-           <div class="col-md-offset-2 col-md-4 col-sm-6">
-            <h1>Navigations</h1>
-             <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-           </div>
-
-           <div class="col-md-4 col-sm-6">
-             <address>
-               <h1>Contact Us</h1>
-               <p>Snappikart Techlabs Pvt. Ltd.<br> Amity Innovation Incubator, <br> Noida, India</p>
-               <div class="google-map">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.4712436881667!2d77.31881081504315!3d28.567966794184472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce55837ff6455%3A0x2263ff5075b42b41!2sAmity+University!5e0!3m2!1sen!2sin!4v1698672053847" allowfullscreen></iframe>
-               </div>
-             </address>
-           </div> 
-
-           <div class="col-md-12 col-sm-12">
-             <ul class="social-icon">
-              <li class="line"></li>
-               <li><a href="#" class="fa fa-facebook"></a></li>
-               <li><a href="#" class="fa fa-twitter"></a></li>
-               <li><a href="#" class="fa fa-linkedin"></a></li>
-               <li><a href="#" class="fa fa-instagram"></a></li>
-             </ul>
-           </div>
-         </div>
-       </div>
-    </div>
+    <!--
+        End Features
+        ==================================== -->
 
 
-     <!-- HOME -->
-     <section id="home">
-        <div class="overlay"></div>
-          <div class="container">
-               <div class="row">
+    
+    
 
-                    <div class="col-md-12 col-sm-12">
-                         <div class="home-info">
-                              <h1>Snappikart is <br>Coming Soon!</h1>
-                              <!-- You can change the date time in init.js file -->
-                              <ul class="countdown">
-                                   <li>
-                                        <span class="days">14</span>
-                                        <h3>Days</h3>
-                                   </li>
-                                   <li>
-                                        <span class="hours">10</span>
-                                        <h3>Hours</h3>
-                                   </li>
-                                   <li>
-                                        <span class="minutes">15</span>
-                                        <h3>Minutes</h3>
-                                   </li>
-                                   <li>
-                                        <span class="seconds">34</span>
-                                        <h3>Seconds</h3>
-                                   </li>     
-                              </ul>
-                              <div class="subscribe-form">
-                                <form action="" method="get">
-                                  <input type="email" name="email" class="form-control" placeholder="Enter your email" required="">
-                                  <button type="submit" class="form-control"><i class="fa fa-envelope-o"></i></button>
-                                </form>
-                              </div>
-                         </div>
+    <!--
+        End Our Works
+        ==================================== -->
+
+    <!--
+        Meet Our Team
+        ==================================== -->
+
+    <section id="team" class="team">
+        <div class="container">
+            <div class="row">
+
+                <div class="sec-title text-center wow fadeInUp animated" data-wow-duration="700ms">
+                    <h2>Meet Our Team</h2>
+                    <!--<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>-->
+                </div>
+
+               
+                <div class="team-section">
+                    <div class="row1 first-row">
+                        <div class="team-member">
+                            <img src="img/team/cmo.png" alt="Saurabh Singh" class="team-photo">
+                            <div class="team-name">Saurabh Singh</div>
+                            <div class="team-role">CSO</div>
+                        </div>
+                        <div class="team-member">
+                            <img src="img/team/cso.png" alt="Pradeep Yadav" class="team-photo">
+                            <div class="team-name">Pradeep Yadav</div>
+                            <div class="team-role">CMO</div>
+                        </div>
+                        <div class="team-member">
+                            <img src="img/team/hr.png" alt="Deepanshi Kothari" class="team-photo">
+                            <div class="team-name">Deepanshi Kothari</div>
+                            <div class="team-role">HR</div>
+                        </div>
+                    </div>
+                    <div class="row1 second-row">
+                        <div class="team-member">
+                            <img src="img/team/ankit.png" alt="Ankit Saraswat" class="team-photo">
+                            <div class="team-name">Ankit Saraswat</div>
+                            <div class="team-role">Developer</div>
+                        </div>
+                        <div class="team-member">
+                            <img src="img/team/deeksha.png" alt="Deeksha Thakur" class="team-photo">
+                            <div class="team-name">Deeksha Thakur</div>
+                            <div class="team-role">Developer</div>
+                        </div>
+                        <div class="team-member">
+                            <img src="img/team/prakhar.png" alt="Prakhar Tiwari" class="team-photo">
+                            <div class="team-name">Prakhar Tiwari</div>
+                            <div class="team-role">Developer</div>
+                        </div>
+                        <div class="team-member">
+                            <img src="img/team/ayantika.png" alt="Ayantika Das" class="team-photo">
+                            <div class="team-name">Ayantika Das</div>
+                            <div class="team-role">Developer</div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+
+            </div>
+        </div>
+    </section>
+
+    <!--
+        End Meet Our Team
+        ==================================== -->
+
+    <!--
+        Some fun facts
+        ==================================== -->
+
+    <section id="facts" class="facts">
+        <div class="parallax-overlay">
+            <div class="container">
+                <div class="row number-counters">
+
+                    <div class="sec-title text-center mb50 wow rubberBand animated" data-wow-duration="1000ms">
+                        
+                        <!--<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>-->
                     </div>
 
-               </div>
-          </div>
-     </section>
+                    
+                   
+                    
+                
+                </div>
+            </div>
+        </div>
+    </section>
 
-     <!-- SCRIPTS -->
-     <script src="js/jquery.js"></script>
-     <script src="js/bootstrap.min.js"></script>
-     <script src="js/vegas.min.js"></script>
-     <script src="js/countdown.js"></script>
-     <script src="js/init.js"></script>
-     <script src="js/custom.js"></script>
+    <!--
+        End Some fun facts
+        ==================================== -->
 
+
+    <!--
+        Contact Us
+        ==================================== -->
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="row mb50">
+
+                <div class="sec-title text-center mb50 wow fadeInDown animated" data-wow-duration="500ms">
+                    <h2>CONTACT US</h2>
+                    <!--<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>-->
+                </div>
+
+               
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 wow fadeInLeft animated" data-wow-duration="500ms">
+                   
+                </div>
+                <!-- end contact address -->
+
+                <!-- contact form -->
+                <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms"
+                    data-wow-delay="300ms">
+                    <div class="contact-form">
+                        <h3>Drop your message!</h3>
+                        <form action="#" id="contact-form">
+                            <div class="input-group name-email">
+                                <div class="input-field">
+                                    <input type="text" name="name" id="name" placeholder="Name" class="form-control">
+                                </div>
+                                <div class="input-field">
+                                    <input type="email" name="email" id="email" placeholder="Email"
+                                        class="form-control">
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <textarea name="message" id="message" placeholder="Message"
+                                    class="form-control"></textarea>
+                            </div>
+                            <div class="input-group">
+                                <input type="submit" id="form-submit" class="pull-right" value="Send message">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- end contact form -->
+
+                <!-- footer social links -->
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12 wow fadeInRight animated" data-wow-duration="500ms"
+                    data-wow-delay="600ms">
+                    <ul class="footer-social">
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <!-- end footer social links -->
+
+            </div>
+        </div>
+
+       <!-- 
+        <div id="map_canvas" class="wow bounceInDown animated" data-wow-duration="500ms"></div>
+        -->
+
+    </section>
+
+    <!--
+        End Contact Us
+        ==================================== -->
+
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
+                    <div class="footer-single">
+                        <img src="img/remove.png" alt="">
+                        <p>Redefining retail experience with our innovative technology solutions to bridge the gap between retailers and customers, creating a seamless shopping journey powered by automation, artificial intelligence and intuitive design.</p>
+                    </div>
+                </div>
+
+                
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms"
+                    data-wow-delay="900ms">
+                    <div class="footer-single">
+                        <h6>Help </h6>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Privacy Settings</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms"
+                    data-wow-delay="900ms">
+                    <div class="footer-single">
+                        <h6>Quick Links</h6>
+                        <ul>
+                            <li><a href="#body">Home</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#facts">Founder's Quote</a></li>
+                            <li><a href="#team">Team Info</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms"
+                    data-wow-delay="900ms">
+                    <div class="footer-single">
+                        <h6>Reach Us</h6>
+                        <ul>
+                            <li><i class="fa-solid fa-location-dot"></i>  Noida, Uttar Pradesh</li>
+                            <li><i class="fa-solid fa-phone"></i>  91xxxxxxxxxx</li>
+                            <li><i class="fas fa-envelope"></i>  snappikarts@gmail.com</li>
+                           
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+          
+        </div>
+    </footer>
+
+    <a href="javascript:void(0);" id="back-top"><i class="fa fa-angle-up fa-3x"></i></a>
+
+    <!-- Essential jQuery Plugins
+		================================================== -->
+    <!-- Main jQuery -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <!-- Single Page Nav -->
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <!-- Twitter Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- jquery.fancybox.pack -->
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <!-- jquery.mixitup.min -->
+    <script src="js/jquery.mixitup.min.js"></script>
+    <!-- jquery.parallax -->
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <!-- jquery.countTo -->
+    <script src="js/jquery-countTo.js"></script>
+    <!-- jquery.appear -->
+    <script src="js/jquery.appear.js"></script>
+    <!-- Contact form validation -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+    <!-- Google Map -->
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <!-- jquery easing -->
+    <script src="js/jquery.easing.min.js"></script>
+    <!-- jquery easing -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        var wow = new WOW({
+            boxClass: 'wow',      // animated element css class (default is wow)
+            animateClass: 'animated', // animation css class (default is animated)
+            offset: 120,          // distance to the element when triggering the animation (default is 0)
+            mobile: false,       // trigger animations on mobile devices (default is true)
+            live: true        // act on asynchronously loaded content (default is true)
+        }
+        );
+        wow.init();
+    </script>
+    <!-- Custom Functions -->
+    <script src="js/custom.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            /* ========================================================================= */
+            /*	Contact Form
+            /* ========================================================================= */
+
+            $('#contact-form').validate({
+                rules: {
+                    name: {
+                        required: true,
+                        minlength: 2
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    message: {
+                        required: true
+                    }
+                },
+                messages: {
+                    name: {
+                        required: "come on, you have a name don't you?",
+                        minlength: "your name must consist of at least 2 characters"
+                    },
+                    email: {
+                        required: "no email, no message"
+                    },
+                    message: {
+                        required: "um...yea, you have to write something to send this form.",
+                        minlength: "thats all? really?"
+                    }
+                },
+                submitHandler: function (form) {
+                    $(form).ajaxSubmit({
+                        type: "POST",
+                        data: $(form).serialize(),
+                        url: "process.php",
+                        success: function () {
+                            $('#contact-form :input').attr('disabled', 'disabled');
+                            $('#contact-form').fadeTo("slow", 0.15, function () {
+                                $(this).find(':input').attr('disabled', 'disabled');
+                                $(this).find('label').css('cursor', 'default');
+                                $('#success').fadeIn();
+                            });
+                        },
+                        error: function () {
+                            $('#contact-form').fadeTo("slow", 0.15, function () {
+                                $('#error').fadeIn();
+                            });
+                        }
+                    });
+                }
+            });
+        });
+    </script>
 </body>
+
 </html>
