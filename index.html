@@ -12,7 +12,7 @@
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <!-- Page Title -->
-    <title>Snappikart</title>
+    <title>Snappikart Techlabs</title>
     <link rel="icon" href="img/snap.png" type="image/x-icon">
     <!-- Meta Description -->
     <meta name="description" content="Blue One Page Creative HTML5 Template">
@@ -26,7 +26,8 @@
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
     <!-- CSS
 		================================================== -->
     <!-- Fontawesome Icon font -->
@@ -44,6 +45,14 @@
 
     <!-- Modernizer Script for old Browsers -->
     <script src="js/modernizr-2.6.2.min.js"></script>
+    k href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 </head>
 
@@ -59,7 +68,7 @@
         Fixed Navigation
         ==================================== -->
     <header id="navigation" class="navbar-fixed-top navbar">
-        <div class="container">
+        <div class="container navbar-container">
             <div class="navbar-header">
                 <!-- responsive nav button -->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -68,20 +77,32 @@
                 </button>
                 <!-- /responsive nav button -->
 
-                <!-- logo -->
+                <!-- logo 
                 <a class="navbar-brand" href="#body">
                     <h1 id="logo">
-                        <img src="img/snappy11.png" alt="Brandi">
+                        <img src="img/finalrem.png" alt="Brandi">
+                        
                     </h1>
+                    <h5 id="logoname">
+                        Snappikart Techlabs
+                    </h5>
                 </a>
-                <!-- /logo -->
+                 /logo -->
+                 <a class="navbar-brand" href="#body">
+                    <div class="logo-container">
+                        <img src="img/finalrem.png" alt="Brandi">
+                        <h5 id="logoname">Snappikart Techlabs</h5>
+                    </div>
+                </a>
+                
             </div>
 
             <!-- main nav -->
             <nav class="collapse navbar-collapse navbar-right" role="navigation">
                 <ul id="nav" class="nav navbar-nav">
                     <li class="current"><a href="#body">Home</a></li>
-                    <li><a href="#features">Features</a></li>
+                    <li><a href="#danger-section">Our Products</a></li>
+                    <li><a href="#features">Services</a></li>
                     <li><a href="#facts">Founder's Quote</a></li>
                     <li><a href="#team">Team Info</a></li>
                     <li><a href="#contact">Contact Us</a></li>
@@ -115,18 +136,24 @@
             <div class="carousel-inner" role="listbox">
 
                 <!-- single slide -->
-                <div class="item active" style="background-image: url(img/img_frametwo.webp);">
+                <div class="item active" style="background-image:url(img/img_frametwo.webp);">
                     <div class="carousel-caption">
                         <h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated">
-                            Snappikart</span></h2>
+                            Snappikart Techlabs</span></h2><br>
                         <h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span
-                                class="color">/RESHAPING</span> RETAIL.</h3><br><br>
-                        <p data-wow-duration="1000ms" class="wow slideInRight animated">Redefining retail experience with our innovative technology solutions to bridge the gap between retailers and customers, creating a seamless shopping journey powered by automation, artificial intelligence and intuitive design.
-                        </p>
+                                class="color">< /RESHAPING</span> RETAIL></h3><br><br>
+                        <p data-wow-duration="1000ms" class="wow slideInRight animated"><h4>Redefining retail experience with our innovative technology solutions to bridge the gap between retailers and customers, creating a seamless shopping journey powered by automation, artificial intelligence and intuitive design.
+                        </h4></p><br>
 
+                        <div class="footer-button-container">
+                            <a href="form1.html" class="footer-btn btn-primary">Get Early Access</a>
+                            <a href="#facts1" class="footer-btn btn-secondary">Watch Demo</a>
+                        </div>
                         
                     </div>
+                    
                 </div>
+                
                 <!-- end single slide -->
 
                 
@@ -135,6 +162,7 @@
             <!-- End Wrapper for slides -->
 
         </div>
+        
     </section>
 
     <!--
@@ -144,22 +172,55 @@
     <!--
         Features
         ==================================== -->
+<br><br>
+<!--<section class="danger-section">
+    <div class="content">
+        <h2>Why Is It <span class="highlight">Dangerous?</span></h2>
+        <p>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+            Velit officia consequat duis enim velit mollit. Exercitation
+        </p>
+        <ul class="benefits-list">
+            <li><i class="fas fa-check-circle"></i> Amet minim mollit non deserunt</li>
+            <li><i class="fas fa-check-circle"></i> Deserunt ullamco est sit</li>
+            <li><i class="fas fa-check-circle"></i> Velit officia consequat duis enim</li>
+        </ul>
+        <a href="#" class="learn-more-btn">LEARN MORE</a>
+    </div>
+    <div class="image-container">
+        <img src="img/Picture1.png" alt="Elderly man wearing mask">
+    </div>
+</section>-->
+<section id="danger-section" class="danger-section">
+    <div class="container">
+        <div class="text-section">
+            <h1><span class="highlight">OUR PRODUCTS</span></h1><br><br>
+            <p><h4>
+                Scanimart is an innovative AI-driven retail platform designed to transform the shopping experience for both retailers and customers. By leveraging advanced technology, Scanimart streamlines operations, enhances efficiency, and fosters sustainability. Its core offerings include seamless self-checkout systems that minimize wait times, real-time inventory management for optimal stock control, and predictive analytics to forecast sales trends and customer demands. Scanimart also empowers retailers with valuable customer insights, helping them tailor services to meet specific preferences.
+            </h4></p>
+            
+        </div>
+        <div class="image-section">
+            <img src="img/Picture1.png" alt="Elderly man wearing mask">
+        </div>
+    </div>
+</section>
 
-    <section id="features" class="features">
+
+<!--
+   <section id="features" class="features">
         <div class="container">
             <div class="row">
 
                 <div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
-                    <h2>Features</h2>
-                    <!--<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>-->
+                    <h2>services</h2>
+                    
                 </div>
 
-                <!-- service item -->
+                
                 <div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
                     <div class="service-item">
-                        <!--<div class="service-icon">
-                            <i class="fa fa-github fa-2x"></i>
-                        </div>-->
+                        
 
                         <div class="service-desc">
                             <h3>Self Checkout</h3>
@@ -167,14 +228,12 @@
                         </div>
                     </div>
                 </div>
-                <!-- end service item -->
+              
 
-                <!-- service item -->
+                
                 <div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
                     <div class="service-item">
-                       <!-- <div class="service-icon">
-                            <i class="fa fa-pencil fa-2x"></i>
-                        </div>-->
+                      
 
                         <div class="service-desc">
                             <h3>Anti-theft </h3>
@@ -182,14 +241,12 @@
                         </div>
                     </div>
                 </div>
-                <!-- end service item -->
+               
 
-                <!-- service item -->
+                
                 <div class="col-md-4 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="900ms">
                     <div class="service-item">
-                        <!--<div class="service-icon">
-                            <i class="fa fa-bullhorn fa-2x"></i>
-                        </div>-->
+                        
 
                         <div class="service-desc">
                             <h3>Offers and Support</h3>
@@ -198,11 +255,241 @@
                     </div>
                 </div>
 
-                <!-- end service item -->
-
+               
             </div>
         </div>
+    </section>-->
+    <!--<section id="features" class="features">
+        <div class="container">
+            <div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
+                <h2>Services</h2>
+            </div>
+            <div class="slideshow-container">
+                <div class="slide">
+                    <div class="image-container">
+                    <img src="img/antitheft.jpeg" alt="image1"></div>
+                    <div class="slide-text">
+                    <h3>Anti-theft Measures</h3><p><h4>Implements AI-driven security features to detect and prevent shoplifting, ensuring a safe shopping environment.</h4></p>
+                </div></div>
+                <div class="slide">
+                    <div class="image-container">
+                    <img src="img/checkoutautomation.jpg" alt="image1"></div>
+                    <div class="slide-text"><h3>Checkout Automation</h3><p><h4>AI-powered solutions enable faster checkouts with self-service options, minimizing queues and reducing wait times for customers.</h4></p>
+                </div></div>
+                <div class="slide">
+                <div class="image-container">
+                    <img src="img/profiling.png" alt="image1"></div>
+                    <div class="slide-text"><h3>Customer Insights and Profiling</h3><p><h4>Provides detailed analytics on customer behavior, shopping preferences, and spending patterns to help retailers personalize services.
+
+                    </h4></p>
+                </div></div>
+                <div class="slide">
+                    <div class="image-container">
+                    <img src="img/inventory.webp" alt="image1">
+                    <div class="slide-text"><h3>Inventory Management</h3><p><h4>Offers real-time tracking, automated restocking alerts, and stock optimization to keep shelves full and operations efficient.
+
+                    </h4></p>
+                </div></div>
+                <div class="slide">
+                    <div class="image-container">
+                    <img src="img/receipts.png" alt="image1">
+                </div>
+                    <div class="slide-text"><h3>Digital Receipts</h3><p><h4>Delivers eco-friendly, paperless receipts directly to customers via email or mobile apps, reducing environmental impact.
+                    </h4></p>
+                </div></div>
+                <div class="slide">
+                    <div class="image-container">
+                    <img src="img/predictive.webp" alt="image1">
+                </div>
+                    <div class="slide-text"><h3>Predictive Analytics</h3><p><h4>Utilizes advanced algorithms to predict sales trends, customer demands, and stock requirements, enabling smarter decision-making.</h4></p></span>
+                </div>
+            </div>-
+            <section id="features" class="features">
+                <div class="container">
+                    <div class="sec-title text-center mb50">
+                        <h2>Services</h2>
+                    </div>
+            
+                    <div class="slideshow-container">
+            
+                        <div class="slides">
+                            <input type="radio" name="slide" id="slide1" checked>
+                            <input type="radio" name="slide" id="slide2">
+                            <input type="radio" name="slide" id="slide3">
+                            <input type="radio" name="slide" id="slide4">
+                            <input type="radio" name="slide" id="slide5">
+                            <input type="radio" name="slide" id="slide6">
+            
+                            <div class="slide s1">
+                                <img src="img/antitheft.jpeg" alt="Anti-theft Measures">
+                                <div class="caption">Anti-theft Measures: Implements AI-driven security features to detect and prevent shoplifting.</div>
+                            </div>
+            
+                            <div class="slide">
+                                <img src="img/checkoutautomation.jpg" alt="Checkout Automation">
+                                <div class="caption">Checkout Automation: AI-powered solutions enable faster checkouts with self-service options.</div>
+                            </div>
+            
+                            <div class="slide">
+                                <img src="img/receipts.png" alt="Customer Insights and Profiling">
+                                <div class="caption">Customer Insights: Provides detailed analytics on customer behavior and preferences.</div>
+                            </div>
+            
+                            <div class="slide">
+                                <img src="img/inventory.webp" alt="Inventory Management">
+                                <div class="caption">Inventory Management: Real-time tracking and automated restocking alerts for efficiency.</div>
+                            </div>
+            
+                            <div class="slide">
+                                <img src="img/profiling.png" alt="Digital Receipts">
+                                <div class="caption">Digital Receipts: Eco-friendly paperless receipts via email or mobile apps.</div>
+                            </div>
+            
+                            <div class="slide">
+                                <img src="img/predictive.webp" alt="Predictive Analytics">
+                                <div class="caption">Predictive Analytics: Advanced algorithms predict sales trends and customer demands.</div>
+                            </div>
+                        </div>
+            
+                        <div class="navigation">
+                            <label for="slide1" class="nav-btn"></label>
+                            <label for="slide2" class="nav-btn"></label>
+                            <label for="slide3" class="nav-btn"></label>
+                            <label for="slide4" class="nav-btn"></label>
+                            <label for="slide5" class="nav-btn"></label>
+                            <label for="slide6" class="nav-btn"></label>
+                        </div>
+                    </div>
+            
+                </div>
+            </section>-->
+            <section id="features" class="features">
+                <!--<div class="container">
+                    <div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
+                        <h2>Services</h2>
+                    </div>
+                    <div class="slideshow-container">
+                        <div class="slide">
+                            <img src="img/antitheft.jpeg" alt="image1">
+                            <span class="slide-text"><h3>Anti-theft Measures</h3><br><p><h4>Implements AI-driven security features to detect and prevent shoplifting, ensuring a safe shopping environment.</h4></p></span>
+                        </div>
+                        <div class="slide">
+                            <img src="img/checkoutautomation.jpg" alt="image1">
+                            <span class="slide-text"><h3>Checkout Automation</h3><br><p><h4>AI-powered solutions enable faster checkouts with self-service options, minimizing queues and reducing wait times for customers.</h4></p></span>
+                        </div>
+                        <div class="slide">
+                            <img src="img/receipts.png" alt="image1">
+                            <span class="slide-text"><h3>Customer Insights and Profiling</h3><br><p><h4>Provides detailed analytics on customer behavior, shopping preferences, and spending patterns to help retailers personalize services.
+        
+                            </h4></p></span>
+                        </div>
+                        <div class="slide">
+                            <img src="img/inventory.webp" alt="image1">
+                            <span class="slide-text"><h3>Inventory Management</h3><br><p><h4>Offers real-time tracking, automated restocking alerts, and stock optimization to keep shelves full and operations efficient.
+        
+                            </h4></p></span>
+                        </div>
+                        <div class="slide">
+                            <img src="img/profiling.png" alt="image1">
+                            <span class="slide-text"><h3>Digital Receipts</h3><br><p><h4>Delivers eco-friendly, paperless receipts directly to customers via email or mobile apps, reducing environmental impact.
+                            </h4></p></span>
+                        </div>
+                        <div class="slide">
+                            <img src="img/predictive.webp" alt="image1">
+                            <span class="slide-text"><h3>Predictive Analytics</h3><br><p><h4>Utilizes advanced algorithms to predict sales trends, customer demands, and stock requirements, enabling smarter decision-making.</h4></p></span>
+                        </div>
+                    </div>
+        </div>-->
+        <div class="container">
+            <div class="sec-title">
+                <h2>Services</h2>
+            </div>
+            <div class="slideshow-container">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="img/antitheft.jpeg" alt="Anti-theft Measures"><br><br>
+                        <div class="caption">
+                            <h3>Anti-theft Measures</h3>
+                            <p>Implements AI-driven security features to detect and prevent shoplifting, ensuring a safe shopping environment.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/checkoutautomation.jpg" alt="Checkout Automation"><br><br>
+                        <div class="caption">
+                            <h3>Checkout Automation</h3>
+                            <p>AI-powered solutions enable faster checkouts with self-service options, minimizing queues and reducing wait times for customers.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/profiling.png" alt="Customer Insights"><br><br>
+                        <div class="caption">
+                            <h3>Customer Insights and Profiling</h3>
+                            <p>Provides detailed analytics on customer behavior, shopping preferences, and spending patterns to help retailers personalize services.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/inventory.webp" alt="Inventory Management"><br><br>
+                        <div class="caption">
+                            <h3>Inventory Management</h3>
+                            <p>Offers real-time tracking, automated restocking alerts, and stock optimization to keep shelves full and operations efficient.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/receipts.png" alt="Digital Receipts"><br><br>
+                        <div class="caption">
+                            <h3>Digital Receipts</h3>
+                            <p>Delivers eco-friendly, paperless receipts directly to customers via email or mobile apps, reducing environmental impact.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/predictive.webp" alt="Predictive Analytics"><br><br>
+                        <div class="caption">
+                            <h3>Predictive Analytics</h3>
+                            <p>Utilizes advanced algorithms to predict sales trends, customer demands, and stock requirements, enabling smarter decision-making.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
     </section>
+            
+            
+            <!--<div class="owl-carousel">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                    <div class="service-desc">
+                        <h3>Self Checkout</h3>
+                        <p>Barcode or QR scanning for adding items to the cart and skipping queues. It includes automatic generation of bills for added items.</p>
+                    </div>
+                </div>
+    
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fa fa-shield-alt"></i>
+                    </div>
+                    <div class="service-desc">
+                        <h3>Anti-theft</h3>
+                        <p>Anti-theft measures with QR-based gate passes for verified exit.</p>
+                    </div>
+                </div>
+    
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fa fa-tags"></i>
+                    </div>
+                    <div class="service-desc">
+                        <h3>Offers and Support</h3>
+                        <p>In-app offers and promotions that highlight store discounts. Provides customer support and in-app assistance for resolving queries and issues.</p>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    </section>
+   
     <section id="facts" class="facts">
         <div class="parallax-overlay">
             <div class="container">
@@ -220,9 +507,9 @@
                             <img src="img/team/ceo.png" alt="Sankalp Jain (CEO)">
                         </div>
                         <div class="founder-quote">
-                            <p class="quote">
+                            <p class="quote"><h3>
                                 Snappikart: Because saving time, boosting business, and looking like a genius while doing it is just how we roll. You're welcome.
-                            </p>
+                            </h3></p>
                             <p class="author">- Sankalp Jain (CEO)</p>
                         </div>
                     </div>
@@ -255,7 +542,7 @@
             <div class="row">
 
                 <div class="sec-title text-center wow fadeInUp animated" data-wow-duration="700ms">
-                    <h2>Meet Our Team</h2>
+                    <h2>Our Team</h2>
                     <!--<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>-->
                 </div>
 
@@ -278,15 +565,10 @@
                             <div class="team-role">HR</div>
                         </div>
                     </div>
-                    <div class="row1 second-row">
-                        <div class="team-member">
-                            <img src="img/team/ankit.png" alt="Ankit Saraswat" class="team-photo">
-                            <div class="team-name">Ankit Saraswat</div>
-                            <div class="team-role">Developer</div>
-                        </div>
+                    <div class="row1 first-row">
                         <div class="team-member">
                             <img src="img/team/deeksha.png" alt="Deeksha Choudhary" class="team-photo">
-                            <div class="team-name">Deeksha Thakur</div>
+                            <div class="team-name">Deeksha Choudhary</div>
                             <div class="team-role">Developer</div>
                         </div>
                         <div class="team-member">
@@ -317,14 +599,16 @@
         Some fun facts
         ==================================== -->
 
-    <section id="facts" class="facts">
-        <div class="parallax-overlay">
+    <section id="facts1" class="facts1">
+        <div class="parallax-overlay1">
             <div class="container">
                 <div class="row number-counters">
 
                     <div class="sec-title text-center mb50 wow rubberBand animated" data-wow-duration="1000ms">
                         
                         <!--<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>-->
+                        <iframe width=100% height="400" src="https://www.youtube.com/embed/mSa2wLzcBtw?si=NhqegCY3vZHBU000">
+                        </iframe>
                     </div>
 
                     
@@ -387,7 +671,7 @@
                 </div>
                 <!-- end contact form -->
 
-                <!-- footer social links -->
+                <!-- footer social links 
                 <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12 wow fadeInRight animated" data-wow-duration="500ms"
                     data-wow-delay="600ms">
                     <ul class="footer-social">
@@ -397,7 +681,7 @@
                         <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
                     </ul>
                 </div>
-                <!-- end footer social links -->
+                 end footer social links -->
 
             </div>
         </div>
@@ -405,8 +689,13 @@
        <!-- 
         <div id="map_canvas" class="wow bounceInDown animated" data-wow-duration="500ms"></div>
         -->
+        
+        
+    
+    
+</section>
 
-    </section>
+    
 
     <!--
         End Contact Us
@@ -419,7 +708,8 @@
 
                 <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
                     <div class="footer-single">
-                        <img src="img/remove.png" alt="">
+                        <img src="img/Screenshot_2025-01-22_032042-removebg-preview.png" alt="">
+                        
                         <p>Redefining retail experience with our innovative technology solutions to bridge the gap between retailers and customers, creating a seamless shopping journey powered by automation, artificial intelligence and intuitive design.</p>
                     </div>
                 </div>
@@ -444,6 +734,7 @@
                         <h6>Quick Links</h6>
                         <ul>
                             <li><a href="#body">Home</a></li>
+                            <li><a href="#danger-section">Our Products</a></li>
                             <li><a href="#features">Features</a></li>
                             <li><a href="#facts">Founder's Quote</a></li>
                             <li><a href="#team">Team Info</a></li>
@@ -460,8 +751,17 @@
                             <li><i class="fa-solid fa-phone"></i>  91xxxxxxxxxx</li>
                             <li><i class="fas fa-envelope"></i>  snappikarts@gmail.com</li>
                            
-                        </ul>
-                    </div>
+                        </ul><br>
+                    
+                   
+                    <ul class="footer-social">
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                
                 </div>
 
             </div>
@@ -498,6 +798,7 @@
     <script src="js/jquery.easing.min.js"></script>
     <!-- jquery easing -->
     <script src="js/wow.min.js"></script>
+    
     <script>
         var wow = new WOW({
             boxClass: 'wow',      // animated element css class (default is wow)
@@ -568,6 +869,7 @@
             });
         });
     </script>
+    
 </body>
 
 </html>
