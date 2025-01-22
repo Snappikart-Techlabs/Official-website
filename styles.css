@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.survey-container {
+    width: 60%;
+    text-align: center;
+    padding: 30px;
+    background: #111;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.question-container {
+    margin-bottom: 30px;
+}
+
+.question-container p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.question-number {
+    color: #00ff00;
+}
+
+.options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.options li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.options input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #00ff00;
+}
+
+.options label {
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.navigation span {
+    color: #00ff00;
+    font-weight: bold;
+}
+
+.next-btn, .prev-btn {
+    background-color: #00ff00;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.next-btn:hover, .prev-btn:hover {
+    background-color: #009900;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #444;
+    height: 10px;
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar .progress {
+    height: 100%;
+    background-color: #00ff00;
+    transition: width 0.3s ease;
+}
+.submit-btn {
+    margin-top: 20px;
+    background-color: #00ff00;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #009900;
+  }
+  .container {
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+}
+
+
+/* Form elements */
+.question-number {
+    font-size: 1.5rem;
+    color: #00ff00;
+    margin-bottom: 0.5rem;
+}
+
+.question-text {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+input {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.5rem;
+    border: 2px solid #00ff00;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #00ff00;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+.thank-you-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /*background: url('thank-you-bg.jpg') no-repeat center center/cover;*/
+    padding: 20px;
+}
+
+.thank-you-container h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.thank-you-container p {
+    font-size: 1.2em;
+    width: 60%;
+}

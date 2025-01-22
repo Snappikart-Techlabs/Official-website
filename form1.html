@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title><link rel="icon" href="img/snap.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="survey-container">
+        <h1>Client Satisfaction Survey</h1>
+
+        <!-- Page 1 -->
+        <div class="page active" id="page-1">
+            <div class="question-container">
+                <p><span class="question-number">1.</span> For how long have you been using our product/service?</p>
+                <ul class="options">
+                    <li><input type="radio" name="duration" id="less-than-month"><label for="less-than-month">Less than a month</label></li>
+                    <li><input type="radio" name="duration" id="one-to-twelve"><label for="one-to-twelve">1-12 months</label></li>
+                    <li><input type="radio" name="duration" id="one-to-three"><label for="one-to-three">1-3 years</label></li>
+                    <li><input type="radio" name="duration" id="over-three"><label for="over-three">Over 3 years</label></li>
+                    <li><input type="radio" name="duration" id="not-used"><label for="not-used">Haven't used it yet</label></li>
+                </ul>
+            </div>
+            <div class="navigation">
+                <p>Press <span>ENTER</span></p>
+                <button class="next-btn" onclick="goToPage(2)">NEXT</button>
+            </div>
+            <div class="progress-bar">
+                <div class="progress" style="width: 25%;"></div>
+            </div>
+        </div>
+
+        <!-- Page 2 -->
+        <div class="page" id="page-2">
+            <div class="question-container">
+                <p><span class="question-number">2.</span> How often do you use our product/service?</p>
+                <ul class="options">
+                    <li><input type="radio" name="frequency" id="once-a-week"><label for="once-a-week">Once a week</label></li>
+                    <li><input type="radio" name="frequency" id="two-three-times"><label for="two-three-times">2 or 3 times a month</label></li>
+                    <li><input type="radio" name="frequency" id="once-a-month"><label for="once-a-month">Once a month</label></li>
+                    <li><input type="radio" name="frequency" id="less-than-once"><label for="less-than-once">Less than once a month</label></li>
+                </ul>
+            </div>
+            <div class="navigation">
+                <button class="prev-btn" onclick="goToPage(1)">PREVIOUS</button>
+                <button class="next-btn" onclick="goToPage(3)">NEXT</button>
+            </div>
+            <div class="progress-bar">
+                <div class="progress" style="width: 50%;"></div>
+            </div>
+        </div>
+
+        <!-- Page 3 -->
+        <div class="page" id="page-3">
+            <div class="question-container">
+                <p><span class="question-number">3.</span> How satisfied are you with the product/service?</p>
+                <ul class="options">
+                    <li><input type="radio" name="satisfaction" id="very-satisfied"><label for="very-satisfied">Very satisfied</label></li>
+                    <li><input type="radio" name="satisfaction" id="satisfied"><label for="satisfied">Satisfied</label></li>
+                    <li><input type="radio" name="satisfaction" id="neutral"><label for="neutral">Neutral</label></li>
+                    <li><input type="radio" name="satisfaction" id="unsatisfied"><label for="unsatisfied">Unsatisfied</label></li>
+                    <li><input type="radio" name="satisfaction" id="very-unsatisfied"><label for="very-unsatisfied">Very unsatisfied</label></li>
+                </ul>
+            </div>
+            <div class="navigation">
+                <button class="prev-btn" onclick="goToPage(2)">PREVIOUS</button>
+                <button class="next-btn" onclick="goToPage(4)">NEXT</button>
+            </div>
+            <div class="progress-bar">
+                <div class="progress" style="width: 75%;"></div>
+            </div>
+        
+       
+      
+
+
+    </div>
+   
+        <div class="page" id="page-4">
+            <div class="question-container">
+                <p><span class="question-number">4.</span>What do you dislike about the product/service?</p>
+            <div class="input-box">
+                <input type="text" placeholder="Type your response here..." id="response">
+                <!--<button class="next-button" onclick="nextQuestion()">NEXT</button>-->
+            </div>
+           <!-- <p class="progress-text">7 / 10</p>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 70%;"></div>
+            </div>-->
+            <!--<div class="navigation">
+                <button class="prev-btn" onclick="goToPage(3)">PREVIOUS</button>
+                <button class="next-btn" onclick="goToPage(5)">NEXT</button>
+            </div>-->
+            <div class="progress-bar">
+                <div class="progress" style="width: 100%;"></div>
+            </div>
+            <button class="prev-btn" onclick="goToPage(3)">PREVIOUS</button>
+            <button class="next-btn" onclick="goToPage(5)">SUBMIT</button>
+            <p>Press <span>ENTER</span></p>
+        </div>
+        <div class="page" id="page-5">
+            <div class="thank-you-container">
+                <h2>Thank you! Your feedback is invaluable to us.</h2>
+            <p>
+                We'll use your insights to build tools that solve real problems and create meaningful impact for 
+                e-commerce sellers. Keep an eye out for updates on the features you've helped shape!
+            </p>
+            </div>
+        </div>
+        <div class="thank-you-container" id="thank-you-page" style="display: none;">
+            
+            <h2>Thank you! Your feedback is invaluable to us.</h2>
+            <p>
+                We'll use your insights to build tools that solve real problems and create meaningful impact for 
+                e-commerce sellers. Keep an eye out for updates on the features you've helped shape!
+            </p>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
